@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import {
   withTheme,
   A,
-  Alert,
   Breadcrumb,
   BreadcrumbItem,
   Button,
@@ -12,7 +11,8 @@ import {
   CardFooter,
   Checkbox,
   Label,
-  Input
+  Input,
+  Menu
 } from "parvus-ui";
 
 class Main extends Component {
@@ -28,7 +28,9 @@ class Main extends Component {
 
     return (
       <Fragment>
-        <Alert type="primary">Parvus-ui example</Alert>
+        <Menu type="primary">
+          <div style={{ padding: ".75rem" }}>Parvus-ui example</div>
+        </Menu>
         <Breadcrumb styles={{ backgroundColor: "#f9f9f9", margin: "1rem 0" }}>
           <BreadcrumbItem>
             <A>Home</A>
