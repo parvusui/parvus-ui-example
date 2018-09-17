@@ -20,7 +20,7 @@
     "moduleFileExtensions": ["js", "json"]
   },
   "dependencies": {
-    "parvus-ui": "^1.0.1-0",
+    "parvus-ui": "^1.0.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   },
