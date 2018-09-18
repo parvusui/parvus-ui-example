@@ -1,7 +1,8 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import {
   withTheme,
   A,
+  Background,
   Breadcrumb,
   BreadcrumbItem,
   Button,
@@ -27,9 +28,7 @@ class Main extends Component {
     const { firstName, lastName, email, terms } = this.state;
 
     return (
-      <div
-        style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}
-      >
+      <Background>
         <Menu type="primary">
           <div style={{ padding: ".75rem" }}>Parvus-ui example</div>
         </Menu>
@@ -124,7 +123,7 @@ class Main extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </Background>
     );
   }
 }
