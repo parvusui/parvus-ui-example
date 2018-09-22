@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {
   withTheme,
   A,
-  Background,
   Breadcrumb,
   BreadcrumbItem,
   Button,
@@ -15,6 +14,7 @@ import {
   Input,
   Menu
 } from "parvus-ui";
+import Parvus from "parvus-ui";
 
 class Main extends Component {
   state = {
@@ -27,8 +27,9 @@ class Main extends Component {
   render() {
     const { firstName, lastName, email, terms } = this.state;
 
+    // Examples of default import for Background, this is not recommended.
     return (
-      <Background>
+      <Parvus.Background>
         <Menu type="primary">
           <div style={{ padding: ".75rem" }}>Parvus-ui example</div>
         </Menu>
@@ -123,7 +124,7 @@ class Main extends Component {
             </div>
           </div>
         </div>
-      </Background>
+      </Parvus.Background>
     );
   }
 }
