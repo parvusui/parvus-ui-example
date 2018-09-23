@@ -10,7 +10,7 @@ Install dependencies:
 $ npm install
 ```
 
-Run the example app at [http://localhost:8000](http://localhost:8000):
+Run the example app at [http://localhost:8089](http://localhost:8089):
 
 ```
 $ npm start
