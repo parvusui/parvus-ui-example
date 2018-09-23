@@ -12,7 +12,10 @@ import {
   Checkbox,
   Label,
   Input,
-  Menu
+  Menu,
+  MenuItem,
+  MenuDropdownItem,
+  MenuDropdownSubItem
 } from "parvus-ui";
 import Parvus from "parvus-ui";
 
@@ -31,7 +34,16 @@ class Main extends Component {
     return (
       <Parvus.Background>
         <Menu type="primary">
-          <div style={{ padding: ".75rem" }}>Parvus-ui example</div>
+          <MenuItem
+            styles={{ ":hover": { opacity: "1" }, ":focus": { opacity: "1" } }}
+          >
+            Parvus-ui example
+          </MenuItem>
+          <MenuDropdownItem label="Hover">
+            <MenuDropdownSubItem href="#">First item</MenuDropdownSubItem>
+            <MenuDropdownSubItem href="#">Second item</MenuDropdownSubItem>
+            <MenuDropdownSubItem href="#">Third item</MenuDropdownSubItem>
+          </MenuDropdownItem>
         </Menu>
         <div style={{ margin: "0 1rem" }}>
           <Breadcrumb styles={{ backgroundColor: "#f9f9f9", margin: "1rem 0" }}>
